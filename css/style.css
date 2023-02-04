@@ -1,0 +1,262 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+x big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: "nt seawave alternative";
+    src: url('fonts/NT_SEAWAVE_alternative.otf');
+    src: url('fonts/NT_SEAWAVE_alternative.otf') format('truetype');
+}
+@font-face {
+    font-family: "nt seawave standart";
+    src: url('fonts/NT_SEAWAVE_standart.otf');
+    src: url('fonts/NT_SEAWAVE_standart.otf') format('truetype');
+}
+
+
+html {
+    font-size: 62.5%;
+}
+body{
+    background: url('./../images/background-image.jpg') 50%;
+}
+main{
+    overflow-x: hidden;
+}
+.container-fluid{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.section-pad{
+    padding: 0 2rem;
+}
+.sectionTitle{
+    margin-bottom: 4.3rem;
+}
+.sectionTitle h4{
+    line-height: 1.2;
+}
+.sectionTitle h3{
+    line-height: 0.6;
+}
+
+.celebs-name h6{
+    font-weight: 700;
+    text-align: center;
+}
+.celebs-name h6 span{
+    display: block;
+    line-height: 0;
+    text-transform: uppercase;
+}
+.line-divider{
+    width: 60%;
+    height: 1px;
+    margin: 2rem auto;
+    background-color: #000000;
+}
+
+.unwrap-border{
+    border-top: 2px solid #8A8984;
+    border-bottom: 2px solid #8A8984;
+    padding: 10rem 0;
+}
+
+.top-navigation nav a{
+    text-transform: uppercase;
+    border-bottom: 1px solid #DADADA;
+}
+.top-navigation nav a:last-child{
+    border: 0;
+}
+.top-navigation nav{
+    width: 192px;
+}
+.top-menu{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 999;
+}
+.top-navigation{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    mix-blend-mode: normal;
+    border-radius: 6px;
+    padding: 15px;
+    z-index: 10;
+    display: none;
+}
+.celeb-bg{
+    background: url('./../images/section-2-ribbion.png') 50% no-repeat;
+    background-size: cover;
+}
+.flower-one img{
+    width: 100%;
+}
+.flower-one{
+    position: absolute;
+    width: 20%;
+    top: -226px;
+    left: -65px;
+    transform: rotate(45deg);
+}
+.flower-two img{
+    width: 100%;
+}
+.flower-two{
+    position: absolute;
+    width: 20%;
+    right: -226px;
+    left: -65px;
+    transform: rotate(45deg);
+}
+@media only screen and (min-width: 1600px) {
+    .section-pad{
+        padding: 0 9rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-pad{
+        padding: 0 4rem;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .sectionTitle h3{
+        line-height: 1;
+    }
+
+}
