@@ -200,18 +200,20 @@ main{
 .top-navigation nav{
     width: 192px;
 }
+.top-menu img{
+    width: 100%;
+}
 .top-menu{
-    position: absolute;
+    position: fixed;
     top: 25px;
-    right: 25px;
+    right: 20px;
     z-index: 999;
+    width: 4rem;
 }
 .top-navigation{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    top: 75px;
+    right: 10px;
     background: rgba(255, 255, 255, 0.8);
     mix-blend-mode: normal;
     border-radius: 6px;
@@ -223,40 +225,107 @@ main{
     background: url('./../images/section-2-ribbion.png') 50% no-repeat;
     background-size: cover;
 }
+.pixie-bg{
+    background: url('./../images/pixie.svg') bottom left no-repeat;
+}
+.left-quotes-bg{
+    background: url('./../images/left-quotes.svg') top left no-repeat;
+}
+.right-quotes-bg{
+    background: url('./../images/right-quotes.svg') bottom right no-repeat;
+}
 .flower-one img{
     width: 100%;
+    mix-blend-mode: multiply;
 }
 .flower-one{
     position: absolute;
-    width: 20%;
+    width: 30%;
     top: -226px;
     left: -65px;
-    transform: rotate(45deg);
+    transform: matrix(-0.73, -0.68, -0.68, 0.73, 0, 0);
+    mix-blend-mode: multiply;
+    z-index: 9;
 }
 .flower-two img{
     width: 100%;
+    mix-blend-mode: multiply;
 }
 .flower-two{
     position: absolute;
-    width: 20%;
-    right: -226px;
-    left: -65px;
-    transform: rotate(45deg);
+    width: 30%;
+    top: -226px;
+    right: -65px;
+    mix-blend-mode: multiply;
+    z-index: 9;
+}
+.footer{
+    border-top: 2px solid #8A8984;
+    border-bottom: 2px solid #8A8984;
+    padding: 2rem;
+}
+.tnc-footer ul li{
+    position: relative;
+}
+.tnc-footer ul li:last-child:after{
+    display: none;
+}
+.tnc-footer ul li::after{
+    content: '';
+    height: 25px;
+    width: 1px;
+    background: #000;
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+.celebs-border-b{
+    border-bottom: 2px solid #8A8984;
 }
 @media only screen and (min-width: 1600px) {
     .section-pad{
         padding: 0 9rem;
     }
+    .max-w-celebList{
+        width:1520px;
+        margin:0 auto
+    }
 }
 
+@media only screen and (min-width: 1366px) {
+    .max-w-celebList{
+        width:1280px;
+        margin:0 auto
+    }
+    .sectionTitle h3{
+        line-height: 0.8;
+    }
+}
 @media only screen and (min-width: 1200px) {
     .section-pad{
         padding: 0 4rem;
+    }
+    .max-w-celebList{
+        width:991px;
+        margin:0 auto
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .tnc-footer ul li::after{
+        height: 10px;
     }
 }
 @media only screen and (max-width: 767px) {
     .sectionTitle h3{
         line-height: 1;
     }
-
+    .flower-one, .flower-two{
+        width: 50%;
+    }
+    .tnc-footer ul li::after{
+        display: none;
+    }
+    .left-quotes-bg, .right-quotes-bg{
+        background-size: contain;
+    }
 }

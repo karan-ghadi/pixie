@@ -3,10 +3,22 @@ $(document).ready(function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
   });
+
+  $(".pixieOriginal-slider").slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+  });
+
   $("#menu-btn").click(function () {
     $(".top-navigation").toggle();
   });
+
   $(".celebs-slider").slick({
     dots: false,
     infinite: true,
@@ -16,6 +28,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2500,
     arrows: false,
+    dots: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -23,7 +36,8 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          arrows: false,
+          dots: false,
         },
       },
       {
@@ -52,6 +66,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: false,
+    dots: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -59,7 +74,8 @@ $(document).ready(function () {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          arrows: false,
+          dots: false,
         },
       },
       {

@@ -10,7 +10,7 @@
     <title></title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.cdnfonts.com/css/amourette" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,9 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/amourette" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -30,29 +32,21 @@
             ntSeawaveAlternative: ["nt seawave alternative"],
             ntSeawaveStandart: ["nt seawave standart"],
             montserrat: ["Montserrat", "sans-serif"],
-            playfair: ["Playfair Display", "serif"],
+            playfair: ["Playfair Display", "sans-serif"],
           },
           fontSize: {
-            pageHeading: "14rem",
-            sectionHeading: "15rem",
-            sectionSubHeading: "9rem",
-            sectionSubHeadingSm: "11rem",
-            sectionSubText: "5rem",
-            productTitle: "4rem",
-            buttonTitle: "4rem",
-            paraSection: "3.5rem",
-            textSection: "2.5rem",
-            navText: "1.4rem",
-
-            smallDevicePageHeading: "9rem",
-            smallDeviceSectionHeading: "7rem",
-            smallDeviceSectionSubHeading: "6rem",
-            smallDeviceSectionSubHeadingSm: "5rem",
-            smallDeviceSectionSubText: "3rem",
-            smallDeviceProductTitle: "2rem",
-            smallDeviceButtonTitle: "2rem",
-            smallDeviceParaSection: "2rem",
-            smallDeviceTextSection: "1.5rem",
+            xl_5_size: "14rem",
+            xl_4_size: "13rem",
+            xl_3_size: "11rem",
+            xl_2_size: "10rem",
+            xl_size: "8rem",
+            lg_2_size: "6rem",
+            lg_size: "4rem",
+            sm_3_size: "3.5rem",
+            sm_2_size: "3rem",
+            sm_size: "2.5rem",
+            xs_2_size: "2rem",
+            xs_size: "1.4rem",
           },
           maxWidth: {
             aList: "83%",
@@ -88,12 +82,12 @@
     </div>
     <!-- Navigation -->
     <div class="top-navigation overflow-hidden">
-      <div class="h-screen w-screen flex items-center justify-center">
+      <div class="flex items-center justify-center">
         <nav class="space-y-1 text-center" aria-label="Sidebar">
           <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
           <a
             href="#"
-            class="flex justify-center items-center py-5 font-montserrat font-semibold text-navText divide-y-4"
+            class="flex justify-center items-center py-5 font-montserrat font-semibold text-xs_size divide-y-4"
             aria-current="page"
           >
             <span class="truncate">Home</span>
@@ -101,28 +95,28 @@
 
           <a
             href="#"
-            class="flex justify-center items-center py-5 font-montserrat font-semibold text-navText"
+            class="flex justify-center items-center py-5 font-montserrat font-semibold text-xs_size"
           >
             <span class="truncate">About Us</span>
           </a>
 
           <a
             href="#"
-            class="flex justify-center items-center py-5 font-montserrat font-semibold text-navText"
+            class="flex justify-center items-center py-5 font-montserrat font-semibold text-xs_size"
           >
             <span class="truncate">TESTIMONIALS</span>
           </a>
 
           <a
             href="#"
-            class="flex justify-center items-center py-5 font-montserrat font-semibold text-navText"
+            class="flex justify-center items-center py-5 font-montserrat font-semibold text-xs_size"
           >
             <span class="truncate">SHOP NOW</span>
           </a>
 
           <a
             href="#"
-            class="flex justify-center items-center py-5 font-montserrat font-semibold text-navText"
+            class="flex justify-center items-center py-5 font-montserrat font-semibold text-xs_size"
           >
             <span class="truncate">CONTACT US</span>
           </a>
@@ -131,51 +125,54 @@
     </div>
     <!-- Navigation -->
 
-    <!-- top banner -->
-    <section class="relative w-full mb-[6rem]">
-      <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
-        <div class="col-span-1 flex flex-col justify-center">
-          <div class="banner-slider">
-            <div>
-              <img src="./images/banner.jpg" alt="product-1" />
-            </div>
-            <div>
-              <img src="./images/banner.jpg" alt="product-1" />
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-span-1 flex flex-col justify-center order-first md:order-last mb-[8rem] sm:mb-[0rem]"
-        >
-          <div class="text-center mt-20 sm:mt-0">
-            <img src="./images/logo.svg" alt="Logo" class="mx-auto" />
-            <h3
-              class="text-smallDeviceSectionSubHeadingSm sm:text-sectionSubHeadingSm text-title font-ntSeawaveAlternative mt-10 sm:mt-0"
-            >
-              The Magic Of
-            </h3>
-            <h4
-              class="text-smallDeviceSectionHeading sm:text-sectionHeading font-amourette text-green leading-[0.6] sm:leading-[0.2]"
-            >
-              gifting
-            </h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <main class="container-fluid">
-      <!-- section 2 -->
+      <!-- top banner -->
+      <section class="relative w-full mb-[6rem]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
+          <div class="col-span-1 flex flex-col justify-center">
+            <div class="banner-slider">
+              <div>
+                <img src="./images/banner.jpg" alt="product-1" />
+              </div>
+              <div>
+                <img src="./images/banner.jpg" alt="product-1" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-1 flex flex-col justify-center order-first md:order-last mb-[8rem] sm:mb-[0rem]"
+          >
+            <div class="text-center mt-20 sm:mt-0">
+              <img
+                src="./images/logo.svg"
+                alt="Logo"
+                class="mx-auto w-1/5 sm:w-1/4 xl:w-1/6"
+              />
+              <h3
+                class="text-lg_2_size xl:text-xl_3_size text-title font-ntSeawaveAlternative mt-10 xl:mt-4"
+              >
+                The Magic Of
+              </h3>
+              <h4
+                class="text-xl_2_size xl:text-xl_5_size font-amourette text-green leading-[0.5] sm:leading-[0.4] 2xl:leading-[0.6]"
+              >
+                gifting
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section ::Enchanted, Elegant, Exclusive::-->
       <section class="relative w-full celeb-bg section-pad">
-        <div class="sm:max-w-aList mx-auto mb-[10rem]">
+        <div class="md:w-4/5 mx-auto mb-[10rem] pb-[4rem] celebs-border-b">
           <div class="sectionTitle text-center mb-[4.3rem] sm:mb-[8.3rem]">
             <h4
-              class="text-smallDeviceSectionSubHeadingSm sm:text-sectionSubHeadingSm text-title font-ntSeawaveAlternative mb-6"
+              class="text-lg_2_size xl:xl_2_size 2xl:text-xl_4_size text-title font-ntSeawaveAlternative mb-10 md:mb-6 leading-2"
             >
               Enchanted, Elegant, Exclusive
             </h4>
             <h3
-              class="text-smallDeviceSectionSubHeading sm:text-sectionSubHeading font-amourette text-green"
+              class="text-lg_2_size xl:text-xl_size 2xl:text-xl_2_size font-amourette text-green"
             >
               We have sprinkled our magic on
             </h3>
@@ -184,199 +181,201 @@
             <div class="mt-6 lg:mt-8">
               <div class="celebs-slider">
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Karan
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Johar</span
                     >
-                      Karan
-                      <span class="text-green font-montserrat">Johar</span>
-                    </h6>
-                  </div>
-                  <div class="mt-16">
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
-                    >
-                      Akshay
-                      <span class="text-green font-montserrat">kumar</span>
-                    </h6>
-                  </div>
+                  </h6>
                 </div>
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Akshay
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >kumar</span
                     >
-                      Katrina
-                      <span class="text-green font-montserrat">Kaif</span>
-                    </h6>
-                  </div>
-                  <div class="mt-16">
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
-                    >
-                      Arjun
-                      <span class="text-green font-montserrat">Kapoor</span>
-                    </h6>
-                  </div>
+                  </h6>
                 </div>
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Katrina
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Kaif</span
                     >
-                      Alia
-                      <span class="text-green font-montserrat">bhatt</span>
-                    </h6>
-                  </div>
-                  <div class="mt-16">
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
-                    >
-                      Janhvi
-                      <span class="text-green font-montserrat">Kapoor</span>
-                    </h6>
-                  </div>
+                  </h6>
                 </div>
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Arjun
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Kapoor</span
                     >
-                      Sachin
-                      <span class="text-green font-montserrat">Tendulkar</span>
-                    </h6>
-                  </div>
-                  <div class="mt-16">
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
-                    >
-                      Kunal
-                      <span class="text-green font-montserrat">Rawal</span>
-                    </h6>
-                  </div>
+                  </h6>
                 </div>
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Alia
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >bhatt</span
                     >
-                      Vicky
-                      <span class="text-green font-montserrat">KAUSHAL</span>
-                    </h6>
-                  </div>
-                  <div class="mt-16">
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
-                    >
-                      Anshula
-                      <span class="text-green font-montserrat">Kapoor</span>
-                    </h6>
-                  </div>
+                  </h6>
                 </div>
                 <div class="py-10 px-8">
-                  <div>
-                    <h6
-                      class="text-smallDeviceParaSection sm:text-paraSection text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Janhvi
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Kapoor</span
                     >
-                      Arnab
-                      <span class="text-green font-montserrat">GOSwami</span>
-                    </h6>
-                  </div>
+                  </h6>
+                </div>
+                <div class="py-10 px-8">
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Sachin
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Tendulkar</span
+                    >
+                  </h6>
+                </div>
+                <div class="py-10 px-8">
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Kunal
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Rawal</span
+                    >
+                  </h6>
+                </div>
+                <div class="py-10 px-8">
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Vicky
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >KAUSHAL</span
+                    >
+                  </h6>
+                </div>
+                <div class="py-10 px-8">
+                  <h6
+                    class="text-sm_2_size md:text-sm_3_size text-black font-amourette transition ease-in-out delay-150 hover:scale-125 duration-300 cursor-default"
+                  >
+                    Anshula
+                    <span
+                      class="text-xs_2_size md:text-sm_2_size text-green font-montserrat"
+                      >Kapoor</span
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
             <div class="mt-16 lg:mt-28">
               <div class="brands-slider">
-                <div class="py-10 px-8 min-h-[25rem]">
-                  <div>
-                    <img
-                      src="./images/a-list/maserati.svg"
-                      alt="Maserati"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300"
-                    />
-                  </div>
-                  <div class="mt-16">
-                    <img
-                      src="./images/a-list/probability.svg"
-                      alt="Maserati"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300"
-                    />
-                  </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/maserati.svg"
+                    alt="Maserati"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300"
+                  />
                 </div>
-                <div class="py-10 px-8 min-h-[25rem]">
-                  <div class="flex justify-center items-center">
-                    <img
-                      src="./images/a-list/united-colors-of-benetton.svg"
-                      alt="United Colors of Benetton"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300"
-                    />
-                  </div>
-                  <div class="mt-16">
-                    <img
-                      src="./images/a-list/true-bay.svg"
-                      alt="Maserati"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300"
-                    />
-                  </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/probability.svg"
+                    alt="Maserati"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300"
+                  />
                 </div>
-                <div class="py-10 px-8 min-h-[25rem]">
-                  <div class="flex justify-center items-center">
-                    <img
-                      src="./images/a-list/dharma-productions.svg"
-                      alt="United Colors of Benetton"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
-                    />
-                  </div>
-                  <div class="mt-16">
-                    <img
-                      src="./images/a-list/nykaa.svg"
-                      alt="Maserati"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
-                    />
-                  </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/united-colors-of-benetton.svg"
+                    alt="United Colors of Benetton"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300"
+                  />
                 </div>
-                <div class="py-10 px-8 min-h-[25rem]">
-                  <div class="flex justify-center items-center">
-                    <img
-                      src="./images/a-list/first-cry.svg"
-                      alt="United Colors of Benetton"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
-                    />
-                  </div>
-                  <div class="mt-16">
-                    <img
-                      src="./images/a-list/m-tv.svg"
-                      alt="Maserati"
-                      class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
-                    />
-                  </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/true-bay.svg"
+                    alt="Maserati"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300"
+                  />
+                </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/dharma-productions.svg"
+                    alt="United Colors of Benetton"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
+                  />
+                </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/nykaa.svg"
+                    alt="Maserati"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
+                  />
+                </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/first-cry.svg"
+                    alt="United Colors of Benetton"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
+                  />
+                </div>
+                <div class="flex justify-center items-center py-10 px-8">
+                  <img
+                    src="./images/a-list/m-tv.svg"
+                    alt="Maserati"
+                    class="transition ease-in-out delay-150 hover:scale-125 duration-300 mx-auto"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- section -->
+      <!-- section ::Pixie Dust:: -->
       <section class="relative w-full mb-[14rem] section-pad">
         <div>
           <div class="sectionTitle text-center mb-[5rem]">
             <h3
-              class="text-smallDeviceSectionSubHeadingSm sm:text-sectionSubHeadingSm text-title font-ntSeawaveAlternative"
+              class="text-lg_2_size xl:text-xl_2_size text-title font-ntSeawaveAlternative"
             >
               You know it’s true love if it’s from
             </h3>
             <h4
-              class="text-smallDeviceSectionHeading sm:text-sectionHeading font-amourette text-green mt-6 sm:mt-0 mb-6"
+              class="text-lg_2_size xl:text-xl_5_size font-amourette text-green mt-6 sm:mt-0 mb-6"
             >
               Pixie Dust
             </h4>
             <p
-              class="text-smallDeviceSectionSubText sm:text-sectionSubText font-montserrat text-black font-normal"
+              class="text-sm_3_size sm:text-lg_2_size font-ntSeawaveAlternative text-black font-normal"
             >
               our Valentine’s Day Collection
             </p>
           </div>
-          <div class="products-slider">
+          <div class="products-slider xl:w-3/5 mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
               <div class="col-span-1 mb-12 p-4">
                 <div class="overflow-hidden">
@@ -388,14 +387,14 @@
                 </div>
                 <div class="text-center mt-12">
                   <h6
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold leading-none"
+                    class="text-sm_2_size sm:text-sm_3_size font-montserrat font-bold leading-none"
                   >
                     PRODUCT NAME
                   </h6>
                   <div class="line-divider"></div>
                   <button
                     type="button"
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
+                    class="text-sm_size sm:text-sm_2_size font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
                   >
                     SHOP NOW
                   </button>
@@ -411,14 +410,14 @@
                 </div>
                 <div class="text-center mt-12">
                   <h6
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold leading-none"
+                    class="text-sm_2_size sm:text-sm_3_size font-montserrat font-bold leading-none"
                   >
                     PRODUCT NAME
                   </h6>
                   <div class="line-divider"></div>
                   <button
                     type="button"
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
+                    class="text-sm_size sm:text-sm_2_size font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
                   >
                     SHOP NOW
                   </button>
@@ -434,14 +433,14 @@
                 </div>
                 <div class="text-center mt-12">
                   <h6
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold leading-none"
+                    class="text-sm_2_size sm:text-sm_3_size font-montserrat font-bold leading-none"
                   >
                     PRODUCT NAME
                   </h6>
                   <div class="line-divider"></div>
                   <button
                     type="button"
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
+                    class="text-sm_size sm:text-sm_2_size font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
                   >
                     SHOP NOW
                   </button>
@@ -457,14 +456,14 @@
                 </div>
                 <div class="text-center mt-12">
                   <h6
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold leading-none"
+                    class="text-sm_2_size sm:text-sm_3_size font-montserrat font-bold leading-none"
                   >
                     PRODUCT NAME
                   </h6>
                   <div class="line-divider"></div>
                   <button
                     type="button"
-                    class="text-smallDeviceProductTitle sm:text-productTitle font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
+                    class="text-sm_size sm:text-sm_2_size font-montserrat font-bold text-green inline-flex items-center border border-green px-12 py-4 focus:outline-none focus:ring-0 focus:ring-indigo-500 focus:ring-offset-0"
                   >
                     SHOP NOW
                   </button>
@@ -474,28 +473,35 @@
           </div>
         </div>
       </section>
-      <!-- section -->
-      <section class="relative w-full mb-[6rem] section-pad">
+      <!-- section ::Pixie Originals::-->
+      <section class="relative w-full mb-[7rem] section-pad">
         <div class="flower-one">
           <img src="./images/flower2.png" alt="flower" />
         </div>
-        <div
-          class="sectionTitle text-center mb-[4rem] sm:mb-[10rem] w-[160rem] mx-auto"
-        >
-          <h4
-            class="text-smallDeviceSectionHeading sm:text-sectionHeading font-amourette text-green mb-6 sm:mb-0"
+        <div class="celebs-border-b pb-[7rem]">
+          <div
+            class="sectionTitle text-center mb-[4rem] sm:mb-[10rem] 2xl:w-[160rem] mx-auto"
           >
-            Pixie Originals
-          </h4>
-          <h3
-            class="text-smallDeviceSectionSubHeading sm:text-sectionSubHeading text-title font-ntSeawaveAlternative leading-[0.9]"
-          >
-            gifts handcrafted for every occasion
-          </h3>
-        </div>
-        <div class="products">
-          <div class="mt-6 sm:grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:mt-8">
-            <div class="col-span-1 py-8 px-8">
+            <h4
+              class="text-lg_2_size xl:text-xl_5_size font-amourette text-green mb-6 sm:mb-0"
+            >
+              Pixie Originals
+            </h4>
+            <h3
+              class="text-lg_size xl:text-xl_2_size text-title font-ntSeawaveAlternative leading-[0.9]"
+            >
+              gifts handcrafted for every occasion
+            </h3>
+          </div>
+          <div class="sm:w-2/5 sm:mx-auto">
+            <div class="products pixieOriginal-slider">
+              <div class="overflow-hidden">
+                <img
+                  src="./images/products/pixie-original.jpeg"
+                  alt="product-1"
+                  class="transition ease-in-out delay-150 hover:scale-125 duration-300"
+                />
+              </div>
               <div class="overflow-hidden">
                 <img
                   src="./images/products/pixie-original.jpeg"
@@ -504,48 +510,29 @@
                 />
               </div>
             </div>
-            <div class="col-span-1 flex flex-col justify-center py-8 px-8">
-              <p
-                class="text-smallDeviceParaSection sm:text-paraSection leading-tight font-normal m-0 mb-10 font-playfair text-green"
-              >
-                Our vision is to make every gift-giving occasion personal,
-                special and memorable for the giver and receiver as the
-                experience of receiving a gift is as important and at times far
-                more valuable than the actual gift itself.
-              </p>
-              <p
-                class="text-smallDeviceParaSection sm:text-paraSection leading-tight font-normal m-0 font-playfair text-green"
-              >
-                We believe that every gift is an opportunity to express love,
-                appreciation, and gratitude, and we are committed to helping our
-                customers find.
-              </p>
-            </div>
           </div>
         </div>
       </section>
-      <!-- section -->
-      <section class="relative w-full mb-[6rem] section-pad">
+      <!-- section ::Unwrap our::-->
+      <section class="relative w-full mb-[7rem] pixie-bg">
         <div class="flower-two">
           <img src="./images/flower2_cropped.png" alt="flower" />
         </div>
         <div class="sectionTitle text-center mb-[3rem] sm:mb-[6rem]">
           <h3
-            class="text-smallDeviceSectionSubHeadingSm sm:text-sectionSubHeadingSm text-title font-ntSeawaveAlternative"
+            class="text-lg_2_size xl:text-xl_5_size text-title font-ntSeawaveAlternative"
           >
             Unwrap our
           </h3>
-          <h4
-            class="text-smallDeviceSectionHeading sm:text-sectionHeading font-amourette text-green"
-          >
+          <h4 class="text-lg_size xl:text-xl_2_size font-amourette text-green">
             mystery
           </h4>
         </div>
-        <div class="products">
+        <div class="products md:w-4/5 mx-auto celebs-border-b pb-[7rem]">
           <div class="mt-6 sm:grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:mt-8">
             <div class="col-span-1 flex flex-col justify-center py-8 px-8">
               <p
-                class="text-smallDeviceParaSection sm:text-paraSection leading-tight font-normal m-0 mb-10 font-playfair text-green"
+                class="text-xs_2_size xl:text-sm_2_size leading-tight font-normal m-0 mb-10 font-playfair text-green"
               >
                 Our vision is to make every gift-giving occasion personal,
                 special and memorable for the giver and receiver as the
@@ -553,7 +540,7 @@
                 more valuable than the actual gift itself.
               </p>
               <p
-                class="text-smallDeviceParaSection sm:text-paraSection leading-tight font-normal m-0 mb-10 font-playfair text-green"
+                class="text-xs_2_size xl:text-sm_2_size leading-tight font-normal m-0 mb-10 font-playfair text-green"
               >
                 We believe that every gift is an opportunity to express love,
                 appreciation, and gratitude, and we are committed to helping our
@@ -561,7 +548,7 @@
                 occasion.
               </p>
               <p
-                class="text-smallDeviceParaSection sm:text-paraSection leading-tight font-normal m-0 mb-10 font-playfair text-green"
+                class="text-xs_2_size xl:text-sm_2_size leading-tight font-normal m-0 mb-10 font-playfair text-green"
               >
                 We look to create magic with each of our designs and pride
                 ourselves on our excellent attention to detail. We are always on
@@ -581,8 +568,157 @@
           </div>
         </div>
       </section>
-      <!-- section -->
+      <!-- section ::Testimonials::-->
+      <section class="section-pad">
+        <div
+          class="sm:w-10/12 2xl:w-3/4 min-h-[40rem] mx-auto flex items-center justify-center"
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
+            <div
+              class="col-span-1 flex flex-col items-start justify-end left-quotes-bg h-[15rem] md:h-[20rem] mb-28 md:mb-0"
+            >
+              <h5
+                class="text-sm_size md:text-lg_size text-green font-playfair font-normal leading-none"
+              >
+                How do you spell love?
+              </h5>
+              <h4
+                class="text-sm_2_size md:text-lg_3_size font-montserrat font-bold"
+              >
+                PIGLET
+              </h4>
+            </div>
+            <div
+              class="col-span-1 flex flex-col items-end justify-end right-quotes-bg h-[15rem] md:h-[30rem]"
+            >
+              <h5
+                class="text-sm_size md:text-lg_size text-green font-playfair font-normal leading-none text-right"
+              >
+                You don’t spell it. You feel it.
+              </h5>
+              <h4
+                class="text-sm_2_size md:text-lg_3_size font-montserrat font-bold text-right"
+              >
+                POOH
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-ribbon">
+          <img src="./images/ribbon8.png" alt="ribbon" class="mx-auto my-36" />
+        </div>
+      </section>
+      <!-- section ::Contact us::-->
+      <section class="section-pad">
+        <div>
+          <img src="./images/contact-us2.png" alt="" class="md:w-1/2 mx-auto" />
+        </div>
+        <div class="text-center mt-28 mb-96">
+          <p
+            class="text-xs_2_size xl:text-sm_2_size leading-tight font-normal m-0 mb-10 font-montserrat text-green"
+          >
+            Info comes here
+          </p>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="footer sm:flex justify-center">
+        <ul class="sm:flex">
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-10 uppercase"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-10 uppercase"
+              >about us</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-14 uppercase"
+              >services</a
+            >
+          </li>
+          <li class="flex my-4 md:my-0">
+            <a
+              href=""
+              class="font-montserrat font-semibold pr-8 md:pr-14 uppercase"
+              ><img
+                src="./images/facebook.svg"
+                class="w-[1.7rem]"
+                alt="facebook"
+            /></a>
+            <a href="" class="font-montserrat font-semibold sm:pr-14 uppercase"
+              ><img
+                src="./images/instagram.svg"
+                class="w-[1.7rem]"
+                alt="instagram"
+            /></a>
+          </li>
+
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-10 uppercase"
+              >collection</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-10 uppercase"
+              >shop</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold pr-10 uppercase"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4
+          class="text-lg_2_size xl:text-xl_2_size font-ntSeawaveAlternative text-title text-center"
+        >
+          SHOP NOW
+        </h4>
+      </div>
+      <div class="footer sm:flex justify-center tnc-footer">
+        <ul class="sm:flex">
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold sm:pr-10 uppercase"
+              >T&C</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold sm:px-10 uppercase"
+              >Privacy policy</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-xs_size xl:text-xs_2_size font-montserrat font-semibold sm:pl-10 uppercase"
+              >Bulk orders</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"
